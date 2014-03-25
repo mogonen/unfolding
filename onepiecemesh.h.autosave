@@ -1,0 +1,31 @@
+#ifndef ONEPIECEMESH_H
+#define ONEPIECEMESH_H
+
+#include "basemesh.h"
+#include <QVector>
+#include <QMap>
+#include <QStack>
+#include <QSet>
+
+class OnePieceMesh : public BaseMesh{
+public:
+    OnePieceMesh(BaseMesh* mesh, qreal scale);
+    bool RebuildMesh(qreal scale);
+
+private:
+    bool InitialOnePieceMesh();
+    bool MST(Face* first);
+
+private:
+    enum RANGE {MAX_VALUE = 100, MIN_VALUE = 30};
+    qreal m_scale;
+    BaseMesh* m_triangleMesh;
+
+    Face* root;
+    QMap <Face*, QVector <Face*> > treeChildren;
+    QMap <Face*, QVector <Face*> > treeNotChildren;
+    QMap <Edge*, bool>
+
+};
+
+#endif // ONEPIECEMESH_H

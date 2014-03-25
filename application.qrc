@@ -1,0 +1,12 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>images/document-new.png</file>
+    <file>images/folder-open.png</file>
+    <file>images/document-save.png</file>
+    <file>images/saveas.png</file>
+    <file>images/flapTypes/flapType1.png</file>
+    <file>images/flapTypes/flapType2.png</file>
+    <file>images/flapTypes/flapType3.png</file>
+    <file>images/flapTypes/flapType4.png</file>
+</qresource>
+</RCC>

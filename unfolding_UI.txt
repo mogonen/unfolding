@@ -1,0 +1,3 @@
+Flap Types
+	Type 1: Image1
+	Type 1: Image2
